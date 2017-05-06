@@ -25,16 +25,16 @@ $(document).ready(function(){
   function add(num1, num2) {
     return (Number(num1) + Number(num2));
   }
-  
+  // char = = operators = [] inputs = [] totalString = 3 num1 =  num2 = 
   $("button").on("click", function(){
     char = $(this).attr('id');
-    if (validate_numbers.indexOf(char) > -1) {
+    if (validate_numbers.indexOf(char) > -1) {   
       inputs.push(char);
       update();
     }
     else {
       operators.push(char)
-      if (num1) {
+      if (num1 || num1 == 0) {
         num2 = totalString;
         switch(operators[0]) {
           case '/': 
@@ -73,6 +73,7 @@ $(document).ready(function(){
       }
       else {
         operators = [];
+        update();
       }
     }
   });

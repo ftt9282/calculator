@@ -1,3 +1,24 @@
+body {
+  background: #d8d8d8;
+}
+h1 {
+  font-family: 'Press Start 2P', cursive;
+  margin-bottom: 50px;
+}
+h1, button {
+  text-align: center;
+}
+button {
+  display: inline-block;
+  margin: 0;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  font-family: Share;
+  font-size: 40px;
+  padding: 7px 20px;
+  background: #8599a4;
+  border: none;
+}
 #calculator {
   height: 430px;
   width: 314px;
@@ -32,16 +53,4 @@
 }
 .special-char {
   width: 60px;
-}
-button {
-  display: inline-block;
-  margin: 0;
-  margin-right: 10px;
-  margin-bottom: 10px;
-  font-family: Share;
-  font-size: 40px;
-  text-align: center;
-  padding: 7px 20px;
-  background: #8599a4;
-  border: none;
 }
